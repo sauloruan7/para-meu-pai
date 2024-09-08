@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="cabecalho">
+            <h1 class="titulo">Alma em Poesias</h1>
+            <input class="input-pesquisa" type="text" placeholder="Pesquise um tópico:">
+            <button class="botao-pesquisa1" onclick="pesquisar()">
+                <img class="botao-pesquisa" src="search.png" alt="botão-de-pesquisa">
+            </button>
+            <a href="https://www.instagram.com/meus_poemas_alma_em_poesias/" target="_blank"><img class="insta-logo"
+                    src="instagram.png" alt=""></a>
+        </section>
+    </header>
+    <main>
+        <section class="poesias">
+            <img class="img-1" src="folha.png" alt="">
+            <button class="botao-mostrar1" onclick="mostrar()">Poesia 1</button>
+            <div id="resultados-poesias">
+                
+            </div>
+            <img class="img-2" src="folha 2.png" alt="Descrição da imagem">
+            <button class="botao-mostrar2" onclick="mostrar1()">Poesia 2</button>
+            <div id="resultados-poesias1">
+                
+            </div>
+            <img class="img-3" src="folha.png" alt="">
+            <button class="botao-mostrar3" onclick="mostrar2()">Poesia 3</button>
+            <div id="resultados-poesias2">
+               
+            </div>
+            <img class="img-4" src="folha 2.png" alt="Descrição da imagem">
+            <button class="botao-mostrar4" onclick="mostrar3()">Poesia 4</button>
+            <div id="resultados-poesias3">
+                
+            </div>
+        </section>
+        <section></section>
+    </main>
+    <div class="rodape">
+        <footer>
+            <p>2024 - Fernando Oliveira - Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="apps.js"></script>
+    <script src="dados.js"></script>
+</body>
+
+</html>

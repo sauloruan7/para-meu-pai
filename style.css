@@ -1,0 +1,209 @@
+body {
+    background: #ffd199;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url('Tangerine-Regular.ttf') format('truetype');
+}
+
+.titulo {
+    text-align: center;
+    font-family: "Tangerine", cursive;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.input-pesquisa {
+    position: absolute;
+    border-radius: 10px;
+    top: 55px;
+    left: 85px;
+}
+
+.botao-pesquisa {
+    position: absolute;
+    top: 50px;
+    left: 265px;
+
+}
+
+.insta-logo {
+    position: absolute;
+    top: 50px;
+    left: 90%;
+}
+
+.rodape {
+    /* Garante que a altura mínima seja a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens na vertical */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+    /* Espaçamento abaixo de cada seção */
+}
+
+button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #333F39; /* Cor de fundo do botão */
+    color: #D4FFE9; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.botao-mostrar1 {
+    position: absolute;
+    left: 470px;
+    top: 200;
+}
+
+.botao-mostrar2 {
+    position: absolute;
+    right: 470px;
+    top: 450px;
+}
+
+.botao-mostrar3 {
+    position: absolute;
+    left: 470px;
+    top: 800px;
+}
+
+.botao-mostrar4 {
+    position: absolute;
+    right: 470px;
+    top: 1100px;
+}
+
+
+.img-1 {
+    position: absolute;
+    left: 250px;
+}
+
+.txt-1 {
+    position: absolute;
+    left: 285px;
+    bottom: 80px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-2 {
+    position: absolute;
+    right: 250px;
+    top: 450px;
+}
+
+.txt-2 {
+    position: absolute;
+    right: 360px;
+    top: 490px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.img-3 {
+    position: absolute;
+    left: 250px;
+    top: 800px;
+}
+
+.txt-3 {
+    position: absolute;
+    left: 325px;
+    top: 830px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.img-4 {
+    position: absolute;
+    right: 250px;
+    top: 1100px;
+}
+
+.txt-4 {
+    position: absolute;
+    right: 380px;
+    top: 1140px;
+    font-size: 11px;
+    text-align: center;
+}
+.botao-pesquisa1 {
+    border: none;
+    background: none;
+}
+
+.botao-pesquisa1:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #ffe6c7;
+    /* Cor de fundo do rodapé */
+    color: #333F39;
+    /* Cor do texto */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    padding: 0;
+    /* Espaçamento interno */
+    width: 100%;
+    /* Largura total da página */
+    position: absolute;
+    /* Posiciona o rodapé */
+    top: 220%;
+    /* Alinha ao fundo da página */
+    right: 0;
+    left: 0;
+    font-size: 1rem;
+    /* Tamanho da fonte */
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
